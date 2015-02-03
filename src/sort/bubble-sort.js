@@ -1,14 +1,23 @@
+// Using strict mode
 'use strict';
 
+// Define our globals
 window.Algorithms = window.Algorithms || {};
 Algorithms.Sort = Algorithms.Sort || {};
 
+/**
+ * Bubble sort algorithm.
+ * @param {array} arr Array of items to sort.
+ * @param {callback} cmp Optional callback to sort by.
+ */
 Algorithms.Sort.bubbleSort = function(arr, cmp) {
 
+	// Default sort comparator
 	function comparator(a, b) {
 		return a - b;
 	}
 
+	// Process sorting
 	function sort(arr, cmp) {
 		cmp = cmp || comparator;
 		var temp;
