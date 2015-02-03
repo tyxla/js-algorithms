@@ -1,8 +1,9 @@
 'use strict';
 
 window.Algorithms = window.Algorithms || {};
+Algorithms.Sort = Algorithms.Sort || {};
 
-Algorithms.bubbleSort = function(arr, cmp) {
+Algorithms.Sort.bubbleSort = function(arr, cmp) {
 
 	function comparator(a, b) {
 		return a - b;
@@ -21,8 +22,10 @@ Algorithms.bubbleSort = function(arr, cmp) {
 				}
 			}
 		}
-		
+
 		return arr;
 	}
+
+	return sort(arr, cmp);
 
 };
