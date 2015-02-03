@@ -1,2 +1,4 @@
-# js-algorithms
+JS Algorithms
+=============
+
 JavaScript implementations of various algorithms.
