@@ -37,5 +37,3 @@ Algorithms.Sort.shellSort = function(arr, cmp) {
 	return sort(arr, cmp);
 
 };
-
-console.log(Algorithms.Sort.shellSort([6,5,1,4,8,9,2,3,0]));
