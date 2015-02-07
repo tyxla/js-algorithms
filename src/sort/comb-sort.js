@@ -21,13 +21,13 @@ Algorithms.Sort.combSort = function(arr, cmp) {
 	function sort(arr, cmp) {
 		cmp = cmp || comparator;
 		var gap = arr.length,
-	        swap = true;
+			swap = true;
 
 		while (gap > 1 || swap) {
 			if(gap > 1) {
 				gap = parseInt(gap / 1.25);
 			}
-	 
+
 			swap = false;
 			var i = 0;
 			while(i + gap < arr.length) {
