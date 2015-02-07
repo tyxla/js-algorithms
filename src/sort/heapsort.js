@@ -19,6 +19,8 @@ Algorithms.Sort.heapsort = function(arr, cmp) {
 
 	// Find the correct place of given element in given max heap
 	function heapify(arr, index, heapSize, cmp) {
+		cmp = cmp || comparator;
+		
 		var left = 2 * index + 1;
 		var right = 2 * index + 2;
 		var largest = index;
@@ -41,6 +43,8 @@ Algorithms.Sort.heapsort = function(arr, cmp) {
 
 	// Build the max heap of the array
 	function buildMaxHeap(arr, cmp) {
+		cmp = cmp || comparator;
+
 		for (var i = Math.floor(arr.length / 2); i >= 0; i -= 1) {
 			heapify(arr, i, arr.length, cmp);
 		}
