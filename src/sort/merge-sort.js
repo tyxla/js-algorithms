@@ -32,50 +32,50 @@ Algorithms.Sort.mergeSort = function(arr, cmp) {
 			arr1,
 			arr2;
  
-			if (arr.length > 1) {
-				firstHalf = Math.floor(arr.length / 2);
-				secondHalf = arr.length - firstHalf;
-				arr1 = [];
-				arr2 = [];
+		if (arr.length > 1) {
+			firstHalf = Math.floor(arr.length / 2);
+			secondHalf = arr.length - firstHalf;
+			arr1 = [];
+			arr2 = [];
 
-				for (i = 0; i < firstHalf; i++) {
-					arr1[i] = arr[i];
-				}
+			for (i = 0; i < firstHalf; i++) {
+				arr1[i] = arr[i];
+			}
 
-				for(i = firstHalf; i < firstHalf + secondHalf; i++) {
-					arr2[i - firstHalf] = arr[i];
-				}
+			for(i = firstHalf; i < firstHalf + secondHalf; i++) {
+				arr2[i - firstHalf] = arr[i];
+			}
 
-				arr1 = sort( arr1, cmp );
-				arr2 = sort( arr2, cmp );
+			arr1 = sort( arr1, cmp );
+			arr2 = sort( arr2, cmp );
 
-				i = j = k = 0;
+			i = j = k = 0;
 
-				while(arr1.length != j && arr2.length != k) {
-					if ( cmp( arr1[j], arr2[k] ) <= 0 ) {
-						arr[i] = arr1[j];
-						i++;
-						j++;
-					} 
-					else {
-						arr[i] = arr2[k];
-						i++;
-						k++;
-					}
-				}
-
-				while (arr1.length != j) {
+			while(arr1.length != j && arr2.length != k) {
+				if ( cmp( arr1[j], arr2[k] ) <= 0 ) {
 					arr[i] = arr1[j];
 					i++;
 					j++;
-				}
-
-				while (arr2.length != k) {
+				} 
+				else {
 					arr[i] = arr2[k];
 					i++;
 					k++;
 				}
 			}
+
+			while (arr1.length != j) {
+				arr[i] = arr1[j];
+				i++;
+				j++;
+			}
+
+			while (arr2.length != k) {
+				arr[i] = arr2[k];
+				i++;
+				k++;
+			}
+		}
 
 		return arr;
 	}
