@@ -10,7 +10,7 @@ Algorithms.Sort = Algorithms.Sort || {};
  * @param {array} arr Array of items to sort.
  * @param {bool} order Sort order. True for ascending, false otherwise. Default: true (ascending).
  */
-Algorithms.Sort.radixSort = function(arr, cmp) {
+Algorithms.Sort.radixSort = function(arr, order) {
 
 	// Process sorting
 	function sort(arr, order) {
@@ -75,6 +75,6 @@ Algorithms.Sort.radixSort = function(arr, cmp) {
 
 	}
 
-	return sort(arr, cmp);
+	return sort(arr, order);
 
 };
