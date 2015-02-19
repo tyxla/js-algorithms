@@ -30,6 +30,7 @@ Algorithms.Sort.combSort = function(arr, cmp) {
 
 			swap = false;
 			var i = 0;
+			
 			while(i + gap < arr.length) {
 				if( cmp(arr[i], arr[i + gap]) ) {
 					var temp = arr[i];

@@ -24,11 +24,13 @@ Algorithms.Sort.selectionSort = function(arr, cmp) {
 
 		for (i = 0; i < arr.length - 1; i++) {
 			tmp = i;
+
 			for (j = i + 1; j < arr.length; j++) {
 				if ( cmp(arr[tmp], arr[j]) ){
 					tmp = j;
 				}
 			}
+			
 			if(tmp != i){
 				tmp2 = arr[tmp];
 				arr[tmp] = arr[i];

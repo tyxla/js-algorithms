@@ -85,9 +85,11 @@ Algorithms.Sort.flashSort = function(arr) {
         for( j = 1; j < n; ++j ) {
         	hold = arr[ j ];
         	i = j - 1;
+
         	while( i >= 0 && arr[i] > hold ) {
         		arr[ i + 1 ] = arr[ i-- ];
         	}
+        	
         	arr[ i + 1 ] = hold;
         }
 

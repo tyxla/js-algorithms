@@ -40,6 +40,7 @@ Algorithms.Sort.radixSort = function(arr, order) {
 	        for (j = 0; j < arr.length; j++) {
 	        	var value = toResult ? arr[j] : result[j];
 	        	digits = value.toString();
+
 	        	if (digits.length < i) {
 	        		workingCopy[0]++;
 	        	} else {
@@ -59,13 +60,15 @@ Algorithms.Sort.radixSort = function(arr, order) {
 
 	        for (j = arr.length - 1; j >= 0; j--) {
 	        	digits = toResult ? arr[j].toString() : result[j].toString();
+
 	        	if (digits.length < i) {
-	        		index = workingCopy[0] - 1
+	        		index = workingCopy[0] - 1;
 	        		workingCopy[0]--;
 	        	} else {
 	        		index = workingCopy[digits[digits.length - i]] - 1;
 	        		workingCopy[digits[digits.length - i]]--;
 	        	}
+	        	
 	        	toResult ? result[index] = arr[j] : arr[index] = result[j];
 	        }
 	        

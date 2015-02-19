@@ -28,9 +28,11 @@ Algorithms.Sort.insertionSort = function(arr, cmp) {
 		while (len--) {
 			tmp = arr[++i];
 			j = i;
+
 			while ( j-- && cmp(arr[j], tmp) ) {
 				arr[j + 1] = arr[j];
 			}
+			
 			arr[j + 1] = tmp;
 		}
 

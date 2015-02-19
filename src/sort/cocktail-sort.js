@@ -40,6 +40,7 @@ Algorithms.Sort.cocktailSort = function(arr, cmp) {
 
 		do {
 			swapped = false;
+
 			for (i = ++start; i <= end; i++) {
 				if ( cmp(arr[i], arr[i + 1]) > 0 ) {
 					swap(arr, i, i + 1);
@@ -52,6 +53,7 @@ Algorithms.Sort.cocktailSort = function(arr, cmp) {
 			}
 
 			swapped = false;
+			
 			for (i = --end; i >= start; i--) {
 				if ( cmp(arr[i], arr[i + 1]) > 0 ) {
 					swap(arr, i, i + 1);

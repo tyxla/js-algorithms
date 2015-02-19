@@ -39,13 +39,14 @@ Algorithms.Sort.pancakeSort = function(arr, cmp) {
 			var new_slice;
 
 			if (max_idx > 0) {
-				new_slice = arr.slice(0, max_idx+1).reverse();
+				new_slice = arr.slice(0, max_idx + 1).reverse();
 				for (var j = 0; j <= max_idx; j++) {
 					arr[j] = new_slice[j];
 				}
 			}
 
-			new_slice = arr.slice(0, i+1).reverse();
+			new_slice = arr.slice(0, i + 1).reverse();
+			
 			for (var j = 0; j <= i; j++) {
 				arr[j] = new_slice[j];
 			}

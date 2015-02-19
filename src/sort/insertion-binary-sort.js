@@ -38,6 +38,7 @@ Algorithms.Sort.insertionBinarySort = function(arr, cmp) {
 				} else if (cmp(arr[middle], current) > 0) {
 					right = middle - 1;
 				}
+				
 				middle = Math.floor((right + left) / 2);
 			}
 

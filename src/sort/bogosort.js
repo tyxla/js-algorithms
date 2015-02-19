@@ -26,11 +26,13 @@ Algorithms.Sort.bogosort = function(arr, cmp) {
 	// Whether the array is sorted
 	function isSorted(arr, cmp){
 		cmp = cmp || comparator;
+
 		for(var i = 1; i < arr.length; i++) {
 			if ( cmp(arr[i - 1], arr[i]) ) { 
 				return false; 
 			}
 		}
+		
 		return true;
 	}
 
