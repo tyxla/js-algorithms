@@ -56,8 +56,7 @@ Algorithms.Sort.mergeSort = function(arr, cmp) {
 					arr[i] = arr1[j];
 					i++;
 					j++;
-				} 
-				else {
+				} else {
 					arr[i] = arr2[k];
 					i++;
 					k++;
