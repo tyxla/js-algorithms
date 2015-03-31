@@ -36,7 +36,7 @@ Algorithms.Sort.bucketSort = function(arr, cmp) {
 		
 		for (idx in arr) {
 			var bucketKey = Math.ceil(arr[idx] / totalBuckets);
-			buckets[bucketKey].push(arr[idx]);
+			buckets[bucketKey].push( arr[idx] );
 		}
 
 		for (i = 0; i < n; i++) {
