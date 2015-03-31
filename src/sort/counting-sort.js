@@ -25,6 +25,7 @@ Algorithms.Sort.countingSort = function(arr, cmp) {
 	// Process sorting
 	function sort(arr, cmp) {
 		cmp = cmp || comparator;
+		
 		var min = arr[0],
 			max = arr[0],
 			counts = [], 
