@@ -33,6 +33,7 @@ Algorithms.Sort.cocktailSort = function(arr, cmp) {
 	// Process sorting
 	function sort(arr, cmp) {
 		cmp = cmp || comparator;
+		
 		var start = -1,
 			end = arr.length - 2,
 			swapped,

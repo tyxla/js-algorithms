@@ -27,11 +27,13 @@ Algorithms.Sort.oddEvenSort = function(arr, cmp) {
 	// Process sorting
 	function sort(arr, cmp) {
 		cmp = cmp || comparator;
+
 		var sorted = false,
 			i;
 
 		while(!sorted) {
 			sorted = true;
+			
 			for (i = 1; i < arr.length - 1; i += 2) {
 				if ( cmp(arr[i], arr[i + 1]) ) {
 					swap(arr, i, i + 1);

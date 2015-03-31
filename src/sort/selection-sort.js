@@ -20,6 +20,7 @@ Algorithms.Sort.selectionSort = function(arr, cmp) {
 	// Process sorting
 	function sort(arr, cmp) {
 		cmp = cmp || comparator;
+		
 		var i, j, tmp, tmp2;
 
 		for (i = 0; i < arr.length - 1; i++) {

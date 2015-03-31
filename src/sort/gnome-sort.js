@@ -20,6 +20,7 @@ Algorithms.Sort.gnomeSort = function(arr, cmp) {
 	// Process sorting
 	function sort(arr, cmp) {
 		cmp = cmp || comparator;
+		
 		var pos = 1;
 
 		while (pos < arr.length) {

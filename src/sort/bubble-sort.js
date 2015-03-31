@@ -20,10 +20,12 @@ Algorithms.Sort.bubbleSort = function(arr, cmp) {
 	// Process sorting
 	function sort(arr, cmp) {
 		cmp = cmp || comparator;
+
 		var swapped;
 
 		do {
 			swapped = false;
+			
 			for (var i = 0; i < arr.length - 1; i++) {
 				if ( cmp(arr[i], arr[i + 1]) ) {
 					var temp = arr[i];

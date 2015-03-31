@@ -26,6 +26,7 @@ Algorithms.Sort.mergeSort = function(arr, cmp) {
 	// Process sorting
 	function sort(arr, cmp) {
 		cmp = cmp || comparator;
+		
 		var i, j, k,
 			firstHalf,
 			secondHalf,

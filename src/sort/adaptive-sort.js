@@ -27,6 +27,7 @@ Algorithms.Sort.adaptiveSort = function(arr) {
 		} else {
 			result = new Array(left_len + right_len);
 			var k = 0, h = 0;
+			
 			while (true) {
 				if (right_val < left_val) {
 					result[k + h] = right_val;

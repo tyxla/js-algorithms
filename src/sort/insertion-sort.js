@@ -20,12 +20,13 @@ Algorithms.Sort.insertionSort = function(arr, cmp) {
 	// Process sorting
 	function sort(arr, cmp) {
 		cmp = cmp || comparator;
+		
 		var len = arr.length, 
 			i = -1, 
 			j, 
 			tmp;
 
-		while (len--) {
+		while ( len-- ) {
 			tmp = arr[++i];
 			j = i;
 
