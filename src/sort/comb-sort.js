@@ -20,6 +20,7 @@ Algorithms.Sort.combSort = function(arr, cmp) {
 	// Process sorting
 	function sort(arr, cmp) {
 		cmp = cmp || comparator;
+
 		var gap = arr.length,
 			swap = true;
 
@@ -38,6 +39,7 @@ Algorithms.Sort.combSort = function(arr, cmp) {
 					arr[i + gap] = temp;
 					swap = true;
 				}
+				
 				i++;
 			}
 		}
