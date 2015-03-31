@@ -29,7 +29,9 @@ Algorithms.Sort.radixSort = function(arr, order) {
 
         for (i = 0; i < arr.length; i++) {
             digits = arr[i].toString().length;
-            if (digits > d) d = digits;
+            if (digits > d) {
+            	d = digits;
+            }
         }
 
 	    for (i = 1; i <= d; i++) {
