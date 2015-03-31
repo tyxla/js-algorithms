@@ -14,7 +14,10 @@ Algorithms.Sort.flashSort = function(arr) {
 	// Process sorting
 	function sort(arr) {
 		var n = arr.length,
-			i = 0, j = 0, k = 0, t,
+			i = 0, 
+			j = 0, 
+			k = 0, 
+			t,
 			m = ~~( n * 0.125 ),
 			a_nmin = arr[ 0 ],
 			nmax = 0,
@@ -39,7 +42,7 @@ Algorithms.Sort.flashSort = function(arr) {
 
 		var a_nmax = arr[ nmax ];
 
-		if ( a_nmin === a_nmax) { 
+		if ( a_nmin === a_nmax ) { 
 			return arr; 
 		}
 
