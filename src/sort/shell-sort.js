@@ -24,9 +24,11 @@ Algorithms.Sort.shellSort = function(arr, cmp) {
 		for (var h = arr.length; h = parseInt(h / 2);) {
 			for (var i = h; i < arr.length; i++) {
 				var k = arr[i];
+
 				for (var j = i; !cmp(j, h) && cmp(k, arr[j - h]); j -= h) {
 					arr[j] = arr[j - h];
 				}
+				
 				arr[j] = k;
 			}
 		}
