@@ -31,7 +31,7 @@ Algorithms.Sort.oddEvenSort = function(arr, cmp) {
 		var sorted = false,
 			i;
 
-		while(!sorted) {
+		while( !sorted ) {
 			sorted = true;
 			
 			for (i = 1; i < arr.length - 1; i += 2) {
