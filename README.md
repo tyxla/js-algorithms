@@ -5,23 +5,34 @@ JavaScript implementations of various algorithms.
 
 ### Sorting
 
-* Bubble Sort
+##### Selection
+* Selection Sort
+* Heapsort
+
+##### Insertion
 * Insertion Sort
 * Insertion Binary Sort
 * Insertion Sort - Recursive
-* Selection Sort
+* Shell Sort
+
+##### Exchange
+* Bubble Sort
 * Gnome Sort
 * Cocktail Sort
 * Odd-Even Sort
 * Quicksort
-* Pancake Sort
-* Heapsort
-* Merge Sort
-* Shell Sort
 * Comb Sort
-* Counting Sort
-* Bucket Sort
+* Bogosort
+
+##### Merge
+* Merge Sort
+
+##### Distribution
 * Radix Sort
 * Flash Sort
+* Bucket Sort
+* Counting Sort
+
+##### Misc
+* Pancake Sort
 * Adaptive Sort
-* Bogosort
