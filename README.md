@@ -39,4 +39,5 @@ JavaScript implementations of various algorithms.
 
 ---
 
-Various algorithms will get added in the future. Any suggestions for new algorithms and/or improvements are welcome.
+Various algorithms will get added in the future. 
+Any suggestions for new algorithms and/or improvements are welcome.
